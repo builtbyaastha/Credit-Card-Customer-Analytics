@@ -7,11 +7,10 @@ what, who's valuable, and who's a credit risk before it turns into a loss.
 
 - `generate_data.py` - creates a synthetic dataset (2,000 customers, ~70k transactions).
   I didn't have a live Kaggle dataset wired up when I built this, so this script fills that
-  gap. It's not the interesting part of the project - swap it for a real credit card
-  transactions CSV and everything downstream runs unchanged, same column names.
+  gap. It's not the interesting part of the project.
 - `analysis.py` - the actual pipeline. RFM scoring, K-Means clustering into value tiers,
   IQR-based outlier detection, credit risk bucketing by utilization. Exports everything
-  into `outputs/` as clean CSVs ready for Power BI.
+  into `outputs/` as clean CSV.
 - `eda_notebook.ipynb` - the walkthrough version of the same analysis, with EDA plots,
   the elbow method for picking k=4, and reasoning behind each step. Read this if you want
   to see the thinking, not just the output.
